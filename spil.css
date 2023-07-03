@@ -51,7 +51,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url(assets/baggrundstart.svg);
+  background-image: url(baggrundstart.svg);
   z-index: 10000;
 }
 #start_knap_container {
@@ -64,7 +64,7 @@
 #start_knap_sprite {
   width: 100%;
   height: 100%;
-  background-image: url(assets/startspillet_1.svg);
+  background-image: url(startspillet_1.svg);
   background-size: cover;
 }
 
@@ -78,7 +78,7 @@
 #julekampenbaggrund_sprite {
   width: 100%;
   height: 100%;
-  background-image: url(assets/julekampenbaggrund.svg);
+  background-image: url(julekampenbaggrund.svg);
   background-size: cover;
 }
 
@@ -92,7 +92,7 @@
 #risengrødstart_sprite {
   width: 100%;
   height: 100%;
-  background-image: url(assets/risengrødstart.svg);
+  background-image: url(risengrødstart.svg);
   background-size: cover;
 }
 /****************** GAMEOVER SKÆRM ****************************/
@@ -102,7 +102,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url(assets/dutabtebaggrund.svg);
+  background-image: url(dutabtebaggrund.svg);
 }
 
 #game_over_points {
@@ -127,7 +127,7 @@
 #øvdutabte_sprite {
   width: 100%;
   height: 100%;
-  background-image: url(assets/øvdutabte.svg);
+  background-image: url(øvdutabte.svg);
   background-size: cover;
 }
 
@@ -141,7 +141,7 @@
 #prøvigen1_sprite {
   width: 100%;
   height: 100%;
-  background-image: url(assets/prøvigen.svg);
+  background-image: url(prøvigen.svg);
   background-size: cover;
 }
 #musskærm_container {
@@ -154,7 +154,7 @@
 #musskærm_sprite {
   width: 100%;
   height: 100%;
-  background-image: url(assets/mus.svg);
+  background-image: url(mus.svg);
   background-size: cover;
 }
 #musvenstreskærm_container {
@@ -167,7 +167,7 @@
 #musvenstreskærm_sprite {
   width: 100%;
   height: 100%;
-  background-image: url(assets/musvenstre.svg);
+  background-image: url(musvenstre.svg);
   background-size: cover;
 }
 
@@ -179,7 +179,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url(assets/duvandtbaggrund.svg);
+  background-image: url(duvandtbaggrund.svg);
 }
 
 #level_complete_points {
@@ -204,7 +204,7 @@
 #duvandt_sprite {
   width: 100%;
   height: 100%;
-  background-image: url(assets/tillykkeduvandt.svg);
+  background-image: url(tillykkeduvandt.svg);
   background-size: cover;
 }
 #nissepige_container {
@@ -218,7 +218,7 @@
 #nissepige_sprite {
   width: 100%;
   height: 100%;
-  background-image: url(assets/nissepigevenstre.svg);
+  background-image: url(nissepigevenstre.svg);
   background-size: cover;
 }
 #nissedreng_container {
@@ -232,7 +232,7 @@
 #nissedreng_sprite {
   width: 100%;
   height: 100%;
-  background-image: url(assets/nissedrenghøjre.svg);
+  background-image: url(nissedrenghøjre.svg);
   background-size: cover;
 }
 
@@ -247,7 +247,7 @@
 #nisseskærm_sprite {
   width: 100%;
   height: 100%;
-  background-image: url(assets/nissehøjre.svg);
+  background-image: url(nissehøjre.svg);
   background-size: cover;
 }
 
@@ -261,7 +261,7 @@
 #julekugler_sprite {
   width: 100%;
   height: 100%;
-  background-image: url(assets/julekugler.svg);
+  background-image: url(julekugler.svg);
   background-size: cover;
 }
 
@@ -275,7 +275,7 @@
 #prøvigen2_sprite {
   width: 100%;
   height: 100%;
-  background-image: url(assets/prøvigen.svg);
+  background-image: url(prøvigen.svg);
   background-size: cover;
 }
 
@@ -289,7 +289,7 @@
 #risengrødslut_sprite {
   width: 100%;
   height: 100%;
-  background-image: url(assets/risengrødtaber.svg);
+  background-image: url(risengrødtaber.svg);
   background-size: cover;
 }
 
@@ -301,7 +301,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url(assets/baggrundspil.svg);
+  background-image: url(baggrundspil.svg);
   background-size: cover;
 }
 #game_elements {
@@ -321,7 +321,7 @@
 #bord_sprite {
   width: 100%;
   height: 100%;
-  background-image: url(assets/bord.svg);
+  background-image: url(bord.svg);
   background-size: cover;
 }
 
@@ -335,7 +335,7 @@
 #juletræ_sprite {
   width: 100%;
   height: 100%;
-  background-image: url(assets/juletræ.svg);
+  background-image: url(juletræ.svg);
   background-size: cover;
 }
 #julekampenspil_container {
@@ -348,7 +348,7 @@
 #julekampenspil_sprite {
   width: 100%;
   height: 100%;
-  background-image: url(assets/julekampenspil.svg);
+  background-image: url(julekampenspil.svg);
   background-size: cover;
 }
 
@@ -362,7 +362,7 @@
 #risengrød_sprite {
   width: 100%;
   height: 100%;
-  background-image: url(assets/risengrød.svg);
+  background-image: url(risengrød.svg);
   background-size: cover;
 }
 
@@ -376,7 +376,7 @@
 #hjerteliv_sprite {
   width: 100%;
   height: 100%;
-  background-image: url(assets/hjerteliv.svg);
+  background-image: url(hjerteliv.svg);
   background-size: cover;
 }
 #muspoint_container {
@@ -389,7 +389,7 @@
 #muspoint_sprite {
   width: 100%;
   height: 100%;
-  background-image: url(assets/muspoint.svg);
+  background-image: url(muspoint.svg);
   background-size: cover;
 }
 
@@ -404,7 +404,7 @@
 
 #lys_sprite {
   position: absolute;
-  background-image: url(assets/tidlys.svg);
+  background-image: url(tidlys.svg);
   background-size: cover;
   width: 100%;
   height: 100%;
@@ -420,7 +420,7 @@
 
 #ild_sprite {
   position: absolute;
-  background-image: url(assets/tidflamme.svg);
+  background-image: url(tidflamme.svg);
   background-size: cover;
   width: 100%;
   height: 100%;
@@ -434,7 +434,7 @@
 }
 #gran_sprite {
   position: absolute;
-  background-image: url(assets/tidgran.svg);
+  background-image: url(tidgran.svg);
   background-size: cover;
   width: 100%;
   height: 100%;
@@ -483,7 +483,7 @@
 #mus_sprite {
   width: 100%;
   height: 100%;
-  background-image: url(assets/mus.svg);
+  background-image: url(mus.svg);
   background-size: cover;
 }
 #nissepigevenstre_container {
@@ -494,7 +494,7 @@
 #nissepigevenstre_sprite {
   width: 100%;
   height: 100%;
-  background-image: url(assets/nissepigevenstre.svg);
+  background-image: url(nissepigevenstre.svg);
   background-size: cover;
 }
 #nissedrenghøjre_container {
@@ -505,7 +505,7 @@
 #nissedrenghøjre_sprite {
   width: 100%;
   height: 100%;
-  background-image: url(assets/nissedrenghøjre.svg);
+  background-image: url(nissedrenghøjre.svg);
   background-size: cover;
 }
 #musvenstre_container {
@@ -516,7 +516,7 @@
 #musvenstre_sprite {
   width: 100%;
   height: 100%;
-  background-image: url(assets/musvenstre.svg);
+  background-image: url(musvenstre.svg);
   background-size: cover;
 }
 
