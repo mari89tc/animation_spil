@@ -1,0 +1,634 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* spil */
+#screen {
+  width: 100%;
+  aspect-ratio: 16/9;
+  position: relative;
+  overflow: hidden;
+}
+#game {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hide {
+  display: none;
+}
+
+#score_board {
+  color: #c1272d;
+  font-family: "Comic-Art";
+  font-size: small;
+  aspect-ratio: 1/1;
+  position: absolute;
+  font-weight: bold;
+  width: 70%;
+  pointer-events: none;
+}
+#life_board {
+  color: #c1272d;
+  font-family: "Comic-Art";
+  font-size: small;
+  aspect-ratio: 1/1;
+  position: absolute;
+  font-weight: bold;
+  width: 70%;
+  pointer-events: none;
+}
+
+/****************** START SKÆRM ****************************/
+#start {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(assets/baggrundstart.svg);
+  z-index: 10000;
+}
+#start_knap_container {
+  width: 20%;
+  position: absolute;
+  aspect-ratio: 315/107;
+  top: 42%;
+  left: 40%;
+}
+#start_knap_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(assets/startspillet_1.svg);
+  background-size: cover;
+}
+
+#julekampenbaggrund_container {
+  width: 70%;
+  position: absolute;
+  aspect-ratio: 795/189;
+  top: 5%;
+  left: 18%;
+}
+#julekampenbaggrund_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(assets/julekampenbaggrund.svg);
+  background-size: cover;
+}
+
+#risengrødstart_container {
+  width: 60%;
+  position: absolute;
+  aspect-ratio: 760/312;
+  top: 57%;
+  left: 20%;
+}
+#risengrødstart_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(assets/risengrødstart.svg);
+  background-size: cover;
+}
+/****************** GAMEOVER SKÆRM ****************************/
+#game_over {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(assets/dutabtebaggrund.svg);
+}
+
+#game_over_points {
+  color: #ed1c24;
+  font-family: "Comic-Art";
+  font-size: xx-small;
+  aspect-ratio: 1/1;
+  position: absolute;
+  font-weight: bold;
+  width: 70%;
+  top: 46%;
+  left: 24%;
+}
+
+#øvdutabte_container {
+  width: 20%;
+  position: absolute;
+  aspect-ratio: 475/270;
+  top: 23%;
+  left: 39%;
+}
+#øvdutabte_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(assets/øvdutabte.svg);
+  background-size: cover;
+}
+
+#prøvigen1_container {
+  width: 18%;
+  position: absolute;
+  aspect-ratio: 315/107;
+  top: 55%;
+  left: 40%;
+}
+#prøvigen1_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(assets/prøvigen.svg);
+  background-size: cover;
+}
+#musskærm_container {
+  position: absolute;
+  width: 20%;
+  aspect-ratio: 155/200;
+  top: 55%;
+  left: 5%;
+}
+#musskærm_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(assets/mus.svg);
+  background-size: cover;
+}
+#musvenstreskærm_container {
+  position: absolute;
+  width: 16%;
+  aspect-ratio: 156/200;
+  top: 63%;
+  left: 70%;
+}
+#musvenstreskærm_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(assets/musvenstre.svg);
+  background-size: cover;
+}
+
+/****************** LEVEL COMPLETE SKÆRM ****************************/
+
+#level_complete {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(assets/duvandtbaggrund.svg);
+}
+
+#level_complete_points {
+  color: #ed1c24;
+  font-family: "Comic-Art";
+  font-size: xx-small;
+  font-weight: bold;
+  aspect-ratio: 1/1;
+  position: absolute;
+  width: 70%;
+  top: 48%;
+  left: 29%;
+}
+
+#duvandt_container {
+  width: 23%;
+  position: absolute;
+  aspect-ratio: 525/262;
+  top: 26%;
+  left: 38%;
+}
+#duvandt_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(assets/tillykkeduvandt.svg);
+  background-size: cover;
+}
+#nissepige_container {
+  position: absolute;
+  width: 15%;
+  aspect-ratio: 225/392;
+  top: 54%;
+  left: 75%;
+  z-index: 100;
+}
+#nissepige_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(assets/nissepigevenstre.svg);
+  background-size: cover;
+}
+#nissedreng_container {
+  position: absolute;
+  width: 16%;
+  aspect-ratio: 240/390;
+  top: 54%;
+  left: 15%;
+  z-index: 100;
+}
+#nissedreng_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(assets/nissedrenghøjre.svg);
+  background-size: cover;
+}
+
+#nisseskærm_container {
+  position: absolute;
+  width: 12%;
+  aspect-ratio: 250/435;
+  top: 63%;
+  left: 87%;
+  z-index: 100;
+}
+#nisseskærm_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(assets/nissehøjre.svg);
+  background-size: cover;
+}
+
+#julekugler_container {
+  width: 13%;
+  position: absolute;
+  aspect-ratio: 215/548;
+  top: -8%;
+  left: 3%;
+}
+#julekugler_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(assets/julekugler.svg);
+  background-size: cover;
+}
+
+#prøvigen2_container {
+  width: 18%;
+  position: absolute;
+  aspect-ratio: 317/110;
+  top: 60%;
+  left: 40%;
+}
+#prøvigen2_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(assets/prøvigen.svg);
+  background-size: cover;
+}
+
+#risengrødslut_container {
+  width: 40%;
+  position: absolute;
+  aspect-ratio: 565/250;
+  top: 70%;
+  left: 30%;
+}
+#risengrødslut_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(assets/risengrødtaber.svg);
+  background-size: cover;
+}
+
+/****************** SPIL SKÆRM ****************************/
+
+#game_background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(assets/baggrundspil.svg);
+  background-size: cover;
+}
+#game_elements {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#bord_container {
+  position: absolute;
+  width: 80%;
+  aspect-ratio: 1515/575;
+  top: 47%;
+  left: 10%;
+}
+#bord_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(assets/bord.svg);
+  background-size: cover;
+}
+
+#juletræ_container {
+  position: absolute;
+  width: 11%;
+  aspect-ratio: 290/570;
+  top: 8%;
+  left: 66%;
+}
+#juletræ_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(assets/juletræ.svg);
+  background-size: cover;
+}
+#julekampenspil_container {
+  position: absolute;
+  width: 40%;
+  aspect-ratio: 795/188;
+  top: 0%;
+  left: 30%;
+}
+#julekampenspil_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(assets/julekampenspil.svg);
+  background-size: cover;
+}
+
+#risengrød_container {
+  position: absolute;
+  width: 67%;
+  aspect-ratio: 1290/490;
+  top: 57%;
+  left: 18%;
+}
+#risengrød_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(assets/risengrød.svg);
+  background-size: cover;
+}
+
+#hjerteliv_container {
+  position: absolute;
+  width: 9%;
+  aspect-ratio: 175/140;
+  top: 8%;
+  left: 130%;
+}
+#hjerteliv_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(assets/hjerteliv.svg);
+  background-size: cover;
+}
+#muspoint_container {
+  position: absolute;
+  width: 10%;
+  aspect-ratio: 155/145;
+  top: 20%;
+  left: 130%;
+}
+#muspoint_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(assets/muspoint.svg);
+  background-size: cover;
+}
+
+/* Timer */
+#lys_container {
+  position: absolute;
+  width: 6%;
+  top: 32%;
+  left: 7%;
+  aspect-ratio: 51/325;
+}
+
+#lys_sprite {
+  position: absolute;
+  background-image: url(assets/tidlys.svg);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+#ild_container {
+  position: absolute;
+  width: 6%;
+  top: 32%;
+  left: 7%;
+  aspect-ratio: 51/44;
+}
+
+#ild_sprite {
+  position: absolute;
+  background-image: url(assets/tidflamme.svg);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+#gran_container {
+  position: absolute;
+  width: 40%;
+  top: 70%;
+  left: -10%;
+  aspect-ratio: 304/164;
+}
+#gran_sprite {
+  position: absolute;
+  background-image: url(assets/tidgran.svg);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.timer {
+  animation-name: timer_kf;
+  animation-duration: 45s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes timer_kf {
+  0% {
+    clip-path: inset(0 0 0);
+  }
+
+  100% {
+    clip-path: inset(95% 0 0);
+  }
+}
+
+.ild {
+  animation-name: ild_kf;
+  animation-duration: 45s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes ild_kf {
+  0% {
+    transform: translateY(-90%);
+  }
+
+  100% {
+    transform: translateY(615%);
+  }
+}
+
+/****************** GAME ELEMENTS ****************************/
+#mus_container {
+  position: absolute;
+  width: 7%;
+  aspect-ratio: 155/200;
+}
+#mus_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(assets/mus.svg);
+  background-size: cover;
+}
+#nissepigevenstre_container {
+  position: absolute;
+  width: 6%;
+  aspect-ratio: 225/392;
+}
+#nissepigevenstre_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(assets/nissepigevenstre.svg);
+  background-size: cover;
+}
+#nissedrenghøjre_container {
+  position: absolute;
+  width: 6%;
+  aspect-ratio: 240/390;
+}
+#nissedrenghøjre_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(assets/nissedrenghøjre.svg);
+  background-size: cover;
+}
+#musvenstre_container {
+  position: absolute;
+  width: 7%;
+  aspect-ratio: 156/200;
+}
+#musvenstre_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(assets/musvenstre.svg);
+  background-size: cover;
+}
+
+.fald {
+  animation-name: fald_kf;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+
+@keyframes fald_kf {
+  0% {
+    transform: translateY(-250%);
+  }
+
+  100% {
+    transform: translateY(250%);
+  }
+}
+
+.frys {
+  animation-play-state: paused;
+}
+
+.forsvind {
+  animation-name: forsvind_kf;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+
+@keyframes forsvind_kf {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.drej {
+  animation-name: drej_kf;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+@keyframes drej_kf {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.shake {
+  animation: tilt-shaking 0.2s 2;
+}
+@keyframes tilt-shaking {
+  0% {
+    transform: rotate(0deg);
+  }
+  15% {
+    transform: rotate(25deg);
+  }
+  30% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-35deg);
+  }
+  75% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(25deg);
+  }
+}
+
+/* Positioner  */
+
+.pos1 {
+  top: 20%;
+  left: 35%;
+}
+.pos2 {
+  top: 20%;
+  left: 43%;
+}
+.pos3 {
+  top: 20%;
+  left: 50%;
+}
+.pos4 {
+  top: 20%;
+  left: 60%;
+}
+/* Delay */
+
+.delay0 {
+  animation-delay: 0s;
+}
+.delay1 {
+  animation-delay: 1s;
+}
+.delay2 {
+  animation-delay: 1.5s;
+}
+.delay3 {
+  animation-delay: 2s;
+}

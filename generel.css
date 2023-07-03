@@ -1,0 +1,25 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+main {
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+main {
+  padding-inline: 20px;
+  margin: 40px;
+}
+
+@font-face {
+  font-family: Comic-Art;
+  src: url(Comic-Art.woff);
+}

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website</title>
+    <link rel="stylesheet" href="spil.css" />
+    <link rel="stylesheet" href="generel.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Forside</a></li>
+          <li><a href="spil.html">Spil</a></li>
+          <li><a href="ide.html">Ide</a></li>
+          <li><a href="teknik.html">Teknik</a></li>
+          <li><a href="grafik.html">Grafik</a></li>
+          <li><a href="assets.html">Assets</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Spil</h1>
+      <div id="screen">
+        <div id="game">
+          <div id="game_background"></div>
+          <div id="game_elements">
+            <div id="bord_container">
+              <div id="bord_sprite"></div>
+            </div>
+            <div id="julekampenspil_container">
+              <div id="julekampenspil_sprite"></div>
+            </div>
+            <div id="juletræ_container">
+              <div id="juletræ_sprite"></div>
+            </div>
+            <div id="risengrød_container">
+              <div id="risengrød_sprite"></div>
+            </div>
+            <div id="mus_container" class="pos1">
+              <div id="mus_sprite"></div>
+            </div>
+            <div id="musvenstre_container" class="pos2">
+              <div id="musvenstre_sprite"></div>
+            </div>
+            <div id="nissehøjre_container">
+              <div id="nissehøjre_sprite"></div>
+            </div>
+            <div id="nissepigevenstre_container" class="pos3">
+              <div id="nissepigevenstre_sprite"></div>
+            </div>
+            <div id="nissedrenghøjre_container" class="pos4">
+              <div id="nissedrenghøjre_sprite"></div>
+            </div>
+          </div>
+          <div id="game_foreground">
+            <div id="risengrød_container">
+              <div id="risengrød_sprite"></div>
+            </div>
+          </div>
+          <div id="game_ui">
+            <div id="score_board">
+              <div id="muspoint_container">
+                <div id="muspoint_sprite">0</div>
+              </div>
+            </div>
+            <div id="life_board">
+              <div id="hjerteliv_container">
+                <div id="hjerteliv_sprite">3</div>
+              </div>
+            </div>
+            <div id="time_board">
+              <div id="lys_container">
+                <div id="lys_sprite"></div>
+              </div>
+              <div id="ild_container">
+                <div id="ild_sprite"></div>
+              </div>
+              <div id="gran_container">
+                <div id="gran_sprite"></div>
+              </div>
+            </div>
+            <div id="prøvigen_container">
+              <div id="prøvigen_sprite"></div>
+            </div>
+            <div id="startspillet_container">
+              <div id="startspillet_sprite"></div>
+            </div>
+          </div>
+        </div>
+
+        <div id="start" class="hide">
+          <div id="start_knap_container">
+            <div id="start_knap_sprite"></div>
+          </div>
+          <div id="julekampenbaggrund_container">
+            <div id="julekampenbaggrund_sprite"></div>
+          </div>
+          <div id="julekugler_container">
+            <div id="julekugler_sprite"></div>
+          </div>
+          <div id="risengrødstart_container">
+            <div id="risengrødstart_sprite"></div>
+          </div>
+          <div id="musskærm_container">
+            <div id="musskærm_sprite"></div>
+          </div>
+          <div id="nissepige_container">
+            <div id="nissepige_sprite"></div>
+          </div>
+        </div>
+        <div id="game_over" class="hide">
+          <div id="øvdutabte_container">
+            <div id="øvdutabte_sprite"></div>
+          </div>
+          <div id="game_over_points"></div>
+          <div id="prøvigen1_container">
+            <div id="prøvigen1_sprite"></div>
+          </div>
+          <div id="julekampenspil_container">
+            <div id="julekampenspil_sprite"></div>
+          </div>
+          <div id="julekugler_container">
+            <div id="julekugler_sprite"></div>
+          </div>
+          <div id="risengrødslut_container">
+            <div id="risengrødslut_sprite"></div>
+          </div>
+          <div id="musskærm_container">
+            <div id="musskærm_sprite"></div>
+          </div>
+          <div id="musvenstreskærm_container">
+            <div id="musvenstreskærm_sprite"></div>
+          </div>
+        </div>
+        <div id="level_complete" class="hide">
+          <div id="duvandt_container">
+            <div id="duvandt_sprite"></div>
+          </div>
+          <div id="prøvigen2_container">
+            <div id="prøvigen2_sprite"></div>
+          </div>
+          <div id="level_complete_points"></div>
+          <div id="julekampenspil_container">
+            <div id="julekampenspil_sprite"></div>
+          </div>
+          <div id="julekugler_container">
+            <div id="julekugler_sprite"></div>
+          </div>
+          <div id="risengrødslut_container">
+            <div id="risengrødslut_sprite"></div>
+          </div>
+          <div id="nissepige_container">
+            <div id="nissepige_sprite"></div>
+          </div>
+          <div id="nissedreng_container">
+            <div id="nissedreng_sprite"></div>
+          </div>
+          <div id="nisseskærm_container">
+            <div id="nisseskærm_sprite"></div>
+          </div>
+        </div>
+        <div id="sounds">
+          <audio src="badsound.mp3" id="badSound"></audio>
+          <audio src="goodsound.mp3" id="goodSound"></audio>
+        </div>
+      </div>
+      <script src="spil.js"></script>
+    </main>
+    <br />
+    <footer>Lavet af Marie E. Kjærside</footer>
+  </body>
+</html>
